@@ -10,18 +10,18 @@ namespace ClassLibrary228
     {
         // Euclidean algorithm implementation. Hello to all ancient Greek mathmatitians
         public static int FindGreatestCommonDivisor(int num1, int num2)
-        {
-            while (num1 != 0 && num2 != 0)
+        { // 0
+            while (num1 != 0 /* 1 */ && num2 != 0 /* 2 */)
             {
-                if (num1 > num2)
-                    num1 %= num2;
+                if (num1 > num2) // 3
+                    num1 %= num2; // 4
                 else
-                    num2 %= num1;
-            }
+                    num2 %= num1; // 5
+            } // 6
 
-            var output = num1 | num2;
+            var output = num1 | num2; // 7
 
-            return output;
-        }
+            return output; // 8
+        } // 9
     }
 }
